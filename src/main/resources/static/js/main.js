@@ -18,7 +18,6 @@ but.addEventListener("click",function(){
         document.getElementById("body").style.overflowY="scroll";
         document.getElementById("bx-im-bar").style.borderRight="0 solid rgb(238, 242, 244)";
         document.getElementById("bx-im-bar").style.transition="0.3s";
-        document.getElementById("loading-image").style.transition="0.3s";
         document.getElementById("bx-im-bar").classList.remove("bx-im-bar-default");        
         on = "yes";
         }
