@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="template-bitrix24 no-paddings start-page bitrix24-light-theme im-bar-mode">
+<body id="body" class="template-bitrix24 no-paddings start-page bitrix24-light-theme im-bar-mode">
 	<div class="bx-im-bar bx-im-bar-transparent" id="bx-im-bar">
 		<div class="help-block" id="bx-help-block" title="Aide">
 			<div class="help-icon-border"></div>
@@ -26,8 +26,7 @@
 		right: 0;
 		background-color: rgba(17, 17, 17,0.1);
 		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;">
+		transition: 0.5s;">
 		<div class="side-panel side-panel-container" style="width: calc(100% - 65px);transform: translateX(0%);">
 			<div class="side-panel-content-container" style="overflow: auto;">
 				<div class="helper-container">
@@ -40,7 +39,8 @@
 			</div>
 			<div class="side-panel-labels" style="top: 17px;">
 				<div class="side-panel-label" style="max-width: 40px;">
-					<div class="side-panel-label-icon-box" title="Fermer">
+					<div class="side-panel-label-icon-box" onClick="closeNav();document.getElementById('body').style.overflowY='scroll';document.getElementById('bx-im-bar').style.borderRight='0 solid rgb(238, 242, 244)';document.getElementById('bx-im-bar').classList.remove('bx-im-bar-default');        
+					on = 'yes';" title="Fermer">
 						<div class="side-panel-label-icon side-panel-label-icon-close"></div>
 					</div><span class="side-panel-label-text side-panel-label-text-hidden"></span>
 				</div>
