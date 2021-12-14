@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MarTechApplication {
 
 	public static void main(String[] args) {
-		String dd = "55";
-		System.out.print(dd);
 		SpringApplication.run(MarTechApplication.class, args);
 	}
 
