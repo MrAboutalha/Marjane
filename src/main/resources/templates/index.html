@@ -4,6 +4,9 @@
 <head>
 	<title>TODO supply a title</title>
 	<meta charset="UTF-8">
+	<link href="../static/css/main.css" rel="stylesheet" />
+	<link href="../static/css/style.css" rel="stylesheet" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -15,6 +18,37 @@
 			<div class="help-block-counter-wrap" id="bx-help-notify"></div>
 		</div>
 	</div>
+	<div id="mySidenav" class=" side-panel-overlay-open" style="  height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: rgba(17, 17, 17,0.1);
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;">
+		<div class="side-panel side-panel-container" style="width: calc(100% - 65px);transform: translateX(0%);">
+			<div class="side-panel-content-container" style="overflow: auto;">
+				<div class="helper-container">
+					<div class="bx-help-popup-loader">
+						<div class="bx-help-popup-loader-text">Chargement...</div>
+					</div>
+					<iframe class="helper-panel-iframe helper-panel-iframe-show"
+						src="https://helpdesk.bitrix24.fr/widget2/?url=https%3A%2F%2Fb24-be38vc.bitrix24.fr%2Fstream%2F%3F_ga%3D2.54087147.25013163.1639316172-479157700.1638352678&amp;is_admin=1&amp;user_id=1&amp;user_email=mohammed.aboutalha.2020%40gmail.com&amp;tariff=fr_project&amp;is_cloud=1&amp;support_bot=0&amp;support_partner_code=&amp;support_partner_name=&amp;action=open&amp;"></iframe>
+				</div>
+			</div>
+			<div class="side-panel-labels" style="top: 17px;">
+				<div class="side-panel-label" style="max-width: 40px;">
+					<div class="side-panel-label-icon-box" title="Fermer">
+						<div class="side-panel-label-icon side-panel-label-icon-close"></div>
+					</div><span class="side-panel-label-text side-panel-label-text-hidden"></span>
+				</div>
+				<div class="side-panel-extra-labels"></div>
+			</div><span class="side-panel-print" title="Imprimer"></span>
+		</div>
+	</div>
+	<script src="../static/js/main.js" defer></script>
 </body>
 
 </html>
